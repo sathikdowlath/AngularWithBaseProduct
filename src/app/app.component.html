@@ -1,0 +1,64 @@
+<div>
+  <mat-toolbar   class="navbar" >
+       <div fxShow="true" fxHide.gt-sm="true"> 
+          <button  mat-icon-button (click)="toggleSidenav()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </div> 
+      <div>
+        Welcome        
+      </div>
+      <div class="divPrefOpt">
+        <a [attr.href]="logoutURL"> <span>Log Out</span></a>
+       </div>
+    </mat-toolbar>
+   
+    <mat-sidenav-container  fxFlexFill>
+    
+            <mat-sidenav #sidenav [ngStyle]="{'background-color':showMenu == 'true' ? '#FFFFFF' : '#FAFAFA' }"  class="sideNav" [opened]="screenWidth > 840" [mode]="(screenWidth > 840) ? 'side' : 'over'" >
+          <div fxLayout="column"  >
+                <mat-nav-list style="overflow: hidden;" >
+                   
+                  <div class="row align-items-center">
+                    <a [routerLink]="['/welcome']" [routerLinkActive]="['is-active']" mat-list-item> 
+                      <span style="font-size: 1.5em;"><i class="fa fa-home"></i></span>
+                      <span class="matIconText">Welcome</span></a>
+                  </div>
+                    
+                  <div class="row align-items-center">
+                    <a [routerLink]="['/products']" [routerLinkActive]="['is-active']" mat-list-item> 
+                      <span style="font-size: 1.5em;"><i class="fa fa-calendar"></i></span>
+                      <span class="matIconText">Products</span></a>
+                  </div>
+  
+                  <div class="row align-items-center">
+                    <a [routerLink]="['/customers']" [routerLinkActive]="['is-active']" mat-list-item> 
+                      <span style="font-size: 1.5em;"><i class="fa fa-folder-open"></i></span>
+                      <span class="matIconText">Customers</span></a>
+                  </div>
+                      
+                  <div class="row align-items-center" >
+                    <a [routerLink]="['/orders']" [routerLinkActive]="['is-active']" mat-list-item> 
+                      <span style="font-size: 1.5em;"><i class="fa fa-clipboard"></i></span>
+                      <span class="matIconText">Orders</span></a>
+                  </div>
+                  <div class="row align-items-center" >
+                    <a [routerLink]="['/invoice']" [routerLinkActive]="['is-active']" mat-list-item> 
+                      <span style="font-size: 1.5em;"><i class="fa fa-clipboard"></i></span>
+                      <span class="matIconText">Invoice</span></a>
+                  </div>
+                  <div class="row align-items-center" >                    
+                      <a [routerLink]="['/products/products/0/edit']" [routerLinkActive]="['is-active']" mat-list-item> 
+                        <span style="font-size: 1.5em;"><i class="fa fa-clipboard"></i></span>
+                        <span class="matIconText">Add Product</span></a>
+                  </div>                 
+              </mat-nav-list>
+            </div>
+          </mat-sidenav>                 
+          <mat-sidenav-content >            
+              <div class="p-col" >
+                  <router-outlet></router-outlet>
+              </div>
+          </mat-sidenav-content>
+    </mat-sidenav-container>  
+    

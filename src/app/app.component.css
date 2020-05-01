@@ -1,0 +1,352 @@
+.nav-link {
+    font-size: large;
+  }  
+
+  .mat-drawer-side {
+    border: 0;
+  }
+  .mat-drawer-content{
+    overflow: hidden;
+  
+  }
+  .navbar {
+  
+      justify-content:space-between;
+      background-color: #0C2340;
+      color: white;
+      height: 50px;
+  }
+  /* a:link {
+    color: #6244BB;
+   
+    } */
+  
+  a {
+  color: #6244BB;
+  text-decoration:underline;
+  cursor: pointer;
+  }
+  
+  button {
+  
+      padding-left: 1rem;
+    
+  }
+  
+  .matIconNotif{
+  
+    color:red;
+  }
+  .navimg{
+  width:62%;
+  /* margin-top: 10px; */
+    
+  }
+  .btn-mat-menu{
+  
+      background-color: blue;
+  }
+   
+  
+    .mat-sidenav-container{
+      min-height: 93vh !important;
+      
+     
+    }
+    
+  
+    .sideNav{
+  
+      color: #303f9f;
+      background-color: #fff;
+      width: 150px;
+      
+    }
+  
+    .badge {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      font-size: 12px;
+      line-height: 13px;
+      border-radius: 50%;
+      width: 13px;
+      height: 10px;
+      background-color: #ff0000; 
+      border: 4px solid #ff0000;
+      color: #ffffff;
+      text-align: center;
+    }
+  
+    .noti-content{
+      
+        word-wrap: break-word;
+        position:fixed;
+        right:262px;
+        background:#e5e5e5;
+        border-radius:4px;
+        top:70px;     
+        border: 1px solid #9E988B;
+        width:500px;
+  
+    }
+  .pref-content{
+    font-family: sans-serif;
+    font-size: 13px;
+    color: #6244BB;
+    word-wrap: break-word;
+    position: absolute;
+    right: 3px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    top: 50px;
+    border: 1px solid #c8c8c8;
+    width: 122px;
+    z-index: 1105;
+    height: 38px;
+  
+  }
+  .pref-top-arrow{
+  border-color: transparent;
+  border-bottom-color: rgb(248, 247, 244);
+  border-style: dashed dashed solid;
+  border-width: 0 8.5px 8.5px;
+  position: absolute;
+  right: 16px;
+  top: -8px;
+  }
+  .divPrefOpt{
+  
+  padding: 10px;
+  
+  }
+  ul#notiContent{
+    
+        max-height:200px;
+        overflow:auto;
+        padding:0px;
+        margin:0px;
+        padding-left:20px;
+    }
+  ul#notiContent li {
+    
+    
+      margin:3px;
+      padding:6px;
+      background:#fff;
+      color: black;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.125;
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  .noti-top-arrow{
+      border-color:transparent;
+      border-bottom-color:rgb(248, 247, 244);
+      border-style:dashed dashed solid;
+      border-width: 0 8.5px 8.5px;
+      position:absolute;
+      right:191px;
+      top:-8px;
+  }
+  
+  
+  
+  .messageBody{
+    
+      font-family: Gotham SSm A,Gotham SSm B,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+        display:block;
+        -webkit-box-flex: 1;
+        flex-grow: 1;
+        margin-top: 4px;
+    
+    }
+    
+    .messageBody > p {
+      letter-spacing: 0px;
+      line-height: 24px;
+      margin: 0px 0px 8px;
+    }
+    
+    
+    .secArea{
+      color:black;
+      background-color: rgb(255, 255, 255);
+      
+      font-size: 12px;
+      line-height: 18px;
+      position: relative;
+      min-height: 0px;
+      animation-name: easeIn;
+      animation-duration: 200ms;
+      border-radius: 4px;     
+    
+    }
+    
+    
+    .ulNotif {
+      line-height: 1.2;
+      max-height: calc(100vh - 200px);
+     
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    
+    
+    .ulNotif li {
+      align-items: center;
+      font-weight: 300;
+      display: flex;
+      box-shadow: none;
+      transition: box-shadow 100ms ease 0s;
+    }
+    .ulNotif li:last-child {
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+    }
+    
+    .headNotif{
+    
+      text-align: left;
+      font-size: 14px;
+      line-height: 40px;
+      font-family: inherit;
+      font-size: large;
+      font-weight: bold;
+      display: flex;
+      font-weight: 500;
+      color: rgb(24, 24, 24);
+      -webkit-box-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      align-items: center;
+      box-shadow: rgba(0, 0, 0, 0.2) 1px 0px 5px 0px;
+      padding: 10px 24px;
+    }
+    
+    
+    .icon {
+      display:block;
+      width: 24px;
+      height: 24px;
+      margin-right: 16px;
+     padding-left: 15px;
+      -webkit-box-flex: 0;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    
+    .mat-step-icon-selected {
+      background-color: red; 
+   }
+  
+   .emptyMessage{
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 90px;
+    font-weight: bold;
+   }
+  
+   .row {
+    display: flex;
+    color:#303f9f;
+  }
+  
+  .align-items-center {
+    align-items: center;
+    color:#303f9f;
+   
+  }
+  
+  /* .matIcon{
+  
+  color:#6244BB;
+  } */
+  
+  .matIconText{
+    
+   /*  color:#6244BB; */
+    padding: 10px;
+    font-weight: bold;
+    }
+  
+    .is-active {
+      border-left: 9px solid;
+      border-color: #6244BB;
+      background-color: rgba(212,212,208,0.30);;
+      color: #6244BB;
+  
+  }
+  @media(max-width: 768px) {
+  
+    .navimg{
+      width:62%;
+        
+      }
+    .noti-content{
+      
+        display: flex;
+        position:fixed;
+        width: 288px;
+        right:18px;
+        background:#e5e5e5;
+        border-radius:4px;
+        top:65px;
+        z-index: 500 !important;
+        border: 1px solid #9E988B;
+    }
+  ul#notiContent{
+    
+        max-height:200px;
+        width: 288px;
+        overflow:auto;
+        padding:0px;
+        margin:0px;
+        padding-left:20px;
+    }
+  ul#notiContent li {
+    
+    
+      margin:3px;
+      padding:6px;
+      background:#fff;
+      color: black;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 1.125;
+      font-family: Roboto, "Helvetica Neue", sans-serif;
+  }
+  .noti-top-arrow{
+  
+    border-color:transparent;
+    border-bottom-color:rgb(248, 247, 244);
+    border-style:dashed dashed solid;
+    border-width: 0 8.5px 8.5px;
+    position:absolute;
+    right:8px;
+    top:-8px;
+    
+    }
+    .secArea{
+      color:black;
+      background-color: rgb(255, 255, 255);
+      width: 288px;
+      font-size: 12px;
+      line-height: 18px;
+      position: relative;
+      min-height: 0px;
+      animation-name: easeIn;
+      animation-duration: 200ms;
+      border-radius: 4px;     
+    
+    }
+    
+  
+  }
+  
+  
+  
